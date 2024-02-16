@@ -35,7 +35,7 @@ body {
 }
 body {
   font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: #0887E3;
   text-align:center;
   background: #222;
 }
@@ -138,11 +138,11 @@ video {
 }
 #video:after {
   content: '';
-  opacity: 0.75;
-  background: #4096ee; /* Old browsers */
-  background: -moz-linear-gradient(top, #4096ee 0%, #39ced6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #4096ee 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #4096ee 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  opacity: 0.90;
+  background: #F08080; /* Old browsers */
+  background: -moz-linear-gradient(top, #F08080 0%, #39ced6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,#F08080 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #F08080 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
   position:fixed;
   left:0;
@@ -327,7 +327,7 @@ a#logo {
   margin-left: 30px;
 }
 .navbar-nav li a {
-  color:#fff;
+  color:#0887E3;
   font-size: 15px;
   text-decoration:none;
   display:block;
@@ -412,7 +412,7 @@ a#logo {
   max-width: 620px;
   width:100%;
   margin:0 auto 30px;
-  color: #fff;
+
 }
 .welcome-title {
   font-weight: 700;
@@ -536,6 +536,8 @@ a#logo {
   display:block;
   margin: 0 auto 0;
   font-size: 64px;
+  width:250px;
+  height:150px;
 }
 .service-box {
   font-size:15px;
@@ -813,7 +815,7 @@ textarea.form-control {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  background-color: #fff;
+  background-color: #0887E3;
   color: #1e1e1e;
   border-radius: 50%;
   font-size: 16px;
@@ -827,7 +829,6 @@ textarea.form-control {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
   text-align: right;
   margin-bottom: -10px;
 }
@@ -851,6 +852,20 @@ textarea.form-control {
   z-index: 99;
   width: 82%;
   height: 6px;
-  background-color: #fff;
+  background-color: #0887E3;;
   border-radius: 3px;
+}
+
+.brandImage{
+	width:255px !important;
+	height :255px !important;
+}
+
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
 }
