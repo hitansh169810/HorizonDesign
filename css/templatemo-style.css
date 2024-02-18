@@ -1,29 +1,4 @@
-/*
 
-Elegance Template
-
-https://templatemo.com/tm-528-elegance
-
-==================================================
-CSS SITEMAP >>>>
-
-  01. GENERAL CSS
-  02. HEADER CSS
-  03. SOCIAL ICONS CSS
-  04. WELCOME BLOCK CSS
-  05. ABOUT BLOCK CSS
-  06. SERVICES BLOCK CSS
-  07. WORK BLOCK CSS
-  08. CONTACT BLOCK CSS
-  09. TESTIMONOALS BLOCK CSS
-  10. SKILLS BLOCK CSS
-
-
-==================================================*/
-
-/*==============================================
-01. GENERAL CSS
-================================================*/
 
 html,
 body {
@@ -34,11 +9,16 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
+  font: 20px/1.6 'Raleway', Arial, Helvetica, sans-serif;
   color: #0887E3;
   text-align:center;
   background: #222;
+  font-family: Marathon !important;
+  
 }
+
+
+
 img {
   border: 0;
   max-width: 100%;
@@ -138,12 +118,12 @@ video {
 }
 #video:after {
   content: '';
-  opacity: 0.90;
-  background: #F08080; /* Old browsers */
-  background: -moz-linear-gradient(top, #F08080 0%, #39ced6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,#F08080 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #F08080 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
+  opacity: 0.75;
+  background: #FEF9E7; /* Old browsers */
+  background: -moz-linear-gradient(top, #FEF9E7 0%, #FEF9E7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,#FEF9E7 0%,#FEF9E7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #FEF9E7 0%,#FEF9E7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#FEF9E7',GradientType=0 ); /* IE6-9 */
   position:fixed;
   left:0;
   top:0;
@@ -338,7 +318,7 @@ a#logo {
   content:'';
   display:block;
   height: 2px;
-  background:#fff;
+  background:#000;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transform:scale(0);
@@ -421,10 +401,10 @@ a#logo {
   letter-spacing:0.02em;
 }
 .welcome-title span {
-  font-size:36px;
+ /* font-size:36px;
   display:block;
   font-weight:300;
-  line-height:1.2;
+  line-height:1.2;*/
 }
 .welcome-box .btn {
   margin-top: 10px;
@@ -540,9 +520,12 @@ a#logo {
   height:150px;
 }
 .service-box {
-  font-size:15px;
+  font-size:15px !important;
   padding:40px 20px;
   height:100%;
+  /*width:150px;
+  height:150px;
+  background-color:#FEF9E7;*/
 }
 .services-list .item:hover {
   background-color: #fff;
@@ -791,8 +774,8 @@ textarea.form-control {
   font-weight: 700;
 }
 .testimonials-section .item p {
-  font-size: 17px;
-  font-style: italic;
+  /*font-size: 16px;
+  font-style: italic;*/
 }
 
 /*==============================================
@@ -868,4 +851,62 @@ div.container {
 ul.myUL {
   display: inline-block;
   text-align: left;
+}
+
+.customHeading{
+	
+	color:#D72B09 !important;
+	 font-family: Marathon;
+	 text-shadow: 4px 4px #000;
+}
+
+.customHeading2{
+	
+	color:#0887E3 !important;
+	font-family: Marathon;
+	text-shadow: 4px 4px #000;
+	
+	
+}
+.customHeading3{
+	color:#000 !important;
+	text-transform: capitalize;
+	font-family: Marathon;
+	  font-size: 40px;
+;
+}
+.customHeading4{
+	color:#000 !important;
+	text-transform: capitalize;
+	font-family: Marathon;
+	  font-size: 24px;
+}
+
+.customShadowBox{
+	text-shadow: 0.25px 0.25px 0.25px #0887E3;
+}
+
+.customHorizonRed{
+	color:#D72B09 !important;
+}
+
+.customHorizonBlue{
+	color:#0887E3 !important;
+}
+
+
+.aboutUSClass{
+	color:#D72B09 !important;
+	font-size: 40px !important;
+	font-weight: 800 !important;
+	 padding-bottom: 50px !important;
+	 text-shadow: 0.25px 0.25px 0.25px #0887E3;
+}
+.aboutUSClass2{
+	 text-shadow: 0.25px 0.25px 0.25px #0887E3;
+}
+
+.customUpperCase{
+	text-transform: capitalize;
+	
 }

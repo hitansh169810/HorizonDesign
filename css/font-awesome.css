@@ -1988,7 +1988,7 @@
   content: "\f272";
 }
 .fa-calendar-times-o:before {
-  content: "\f273";
+  content: "\f273" !important;
 }
 .fa-calendar-check-o:before {
   content: "\f274";
