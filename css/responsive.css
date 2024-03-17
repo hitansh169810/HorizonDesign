@@ -3,6 +3,11 @@
 		display:block !important;
 		height:auto !important;
 	}
+	
+		
+	#whoAreWeMobile {
+	display:none;
+	}
 }
 @media only screen and (max-width: 1440px) {
 	.welcome-title {
@@ -63,6 +68,9 @@
 		max-width:80px;
 	}
 	.gallery-section {
+		padding-top:10px;
+	}
+	.gallery-section1 {
 		padding-top:10px;
 	}
 	.about-img {
@@ -351,6 +359,12 @@
 	.project-buttons-margin {
 		margin-top: 50px;
 	}
+	
+	
+	#whoAreWeMobile {
+	display:none;
+	
+}
 }
 @media only screen and (max-width: 575px) {
 	.welcome-title {
@@ -418,6 +432,70 @@
 	.testimonials-section .item{
 		padding : 0px;
 	}
+	.img-fluid {
+		width:250px;
+		height:150px;
+	}
+	.navbar {
+		padding:0px 0;
+	}
+		.welcome-title {
+    font-size: 35px;
+}
+  .customHeading3{
+		font-size: 30px
+	}
+	 .customHeading{
+		text-shadow: 1.5px 1.5px #000;
+	}
+		 .customHeading2{
+		text-shadow: 1.5px 1.5px #000;
+	}
+	
+	  .customHeading4{
+		font-size: 16px
+	}
+	
+	.aboutUSClass {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    text-shadow: 0px 0px 0px #0887E3;
+}
+	.aboutUSClass2 {
+     text-shadow: 0px 0px 0px #0887E3; 
+	 text-align: left; 
+}
+
+	
+	
+	.service-box h3{
+		    font-weight: 200;
+			font-size: 14px
+	}
+	
+	.brandImage{
+		
+		width: 220px !important;
+    height: 200px !important;
+	}
+	.customH2Css{
+		font-size : 25px !important;
+		font-weight:600 !important;
+	}
+	
+		.customH2Css{
+		font-size : 28px !important;
+		font-weight:800 !important;
+	}
+
+
+#whoAreWe {
+	display:none;
+	
+}
+#whoAreWeMobile {
+	display:block;
+	
 }
 @media only screen and (max-width: 460px) {
 	h4 {
@@ -433,6 +511,23 @@
 	.testimonials-section .item{
 		padding : 0px;
 	}
+	.img-fluid {
+		width:250px;
+		height:150px;
+	}
+	.navbar {
+		padding:0px 0;
+	}
+		.welcome-title {
+    font-size: 35px;
+}
+  .customHeading3{
+		font-size: 30px
+	}
+		 .customHeading{
+		text-shadow: 1.5px 1.5px #000;
+	}
+	
 }
 @media only screen and (max-width: 320px) {
 	.gallery-overlay p {
@@ -446,5 +541,21 @@
 	}
 	.testimonials-section .item{
 		padding : 0px;
+	}
+	.img-fluid {
+		width:250px;
+		height:150px;
+	}
+	.navbar {
+		padding:0px 0;
+	}
+	.welcome-title {
+    font-size: 35px;
+}
+    .customHeading3{
+		font-size: 30px
+	}
+		 .customHeading{
+		text-shadow: 1.5px 1.5px #000;
 	}
 }

@@ -576,6 +576,10 @@ a#logo {
 .gallery-section {
   text-align: center;
 }
+
+.gallery-section1 {
+  text-align: center;
+}
 .portfolio-item img {
   max-width: 100%;
   overflow: hidden;

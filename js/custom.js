@@ -84,24 +84,28 @@
                 items: 3,
                 margin: 30,
                 autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                smartSpeed: 50,
+                autoplayTimeout: 1800,
                 responsive: {
                     0: {
                         items: 1,
-                        margin: 0
+                        margin: 30,
+						height : 100,
                     },
                     460: {
                         items: 1,
-                        margin: 0
+                        margin: 30,
+						height : 100,
                     },
                     576: {
                         items: 2,
-                        margin: 20
+                        margin: 30,
+						height : 100
                     },
                     992: {
                         items: 3,
-                        margin: 30
+                        margin: 30,
+						height : 100
                     }
                 }
             });
@@ -113,20 +117,57 @@
                 dots: true,
                 items: 3,
                 autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 4000,
+                smartSpeed: 50,
+                autoplayTimeout: 1800,
+                responsive: {
+                    0: {
+                        items: 2,
+                       padding:5
+                    },
+                    350: {
+                        items: 2,
+                         padding:5
+                    },
+					576: {
+                        items: 3,
+                        margin: 10
+                    },
+					
+					
+                    992: {
+                        items: 4,
+                        margin: 15
+                    }
+                }
+            });
+        }
+		   if ($('.gallery-list1').length) {
+            $('.gallery-list1').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                items: 3,
+                autoplay: true,
+                smartSpeed: 50,
+                autoplayTimeout: 1800,
                 responsive: {
                     0: {
                         items: 1,
-                        margin: 0
+                       padding:5
                     },
-                    576: {
-                        items: 2,
-                        margin: 20
+                    350: {
+                        items: 1,
+                         padding:5
                     },
-                    992: {
+					576: {
                         items: 3,
-                        margin: 30
+                        margin: 10
+                    },
+					
+					
+                    992: {
+                        items: 4,
+                        margin: 15
                     }
                 }
             });
