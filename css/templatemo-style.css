@@ -10,7 +10,7 @@ body {
 }
 body {
   font: 20px/1.6 'Raleway', Arial, Helvetica, sans-serif;
-  color: #9c4038;
+  color: #000000;
   text-align:center;
   background: #222;
   font-family:  Calibri, "Trebuchet MS", sans-serif !important;
@@ -387,6 +387,7 @@ a#logo {
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.02em;
+    color: #2f2e56 !important;
 }
 .welcome-box p {
   max-width: 620px;
@@ -891,11 +892,11 @@ ul.myUL {
 }
 
 .customHorizonRed{
-	color:#2f2e54 !important;
+	color:#9c4038 !important;
 }
 
 .customHorizonBlue{
-	color:#9c4038 !important;
+	color:#2f2e56 !important;
 }
 
 
@@ -907,7 +908,7 @@ ul.myUL {
 	 text-shadow: 0.25px 0.25px 0.25px #9c4038;
 }
 .aboutUSClass2{
-	 text-shadow: 0.25px 0.25px 0.25px #9c4038;
+	 text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
 .customUpperCase{
@@ -937,5 +938,113 @@ ul.myUL {
 
 
 .accountability-heading {
-    color: #2f2e56;
+    color: #9c4038 ;
 }
+
+
+
+.highlight-service .service-icon i {
+  color: #0a5e54;
+  text-shadow: 0px 0px 8px rgba(10,94,84,0.6);
+  animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+  0% { text-shadow: 0 0 5px rgba(10,94,84,0.6); }
+  50% { text-shadow: 0 0 20px rgba(10,94,84,0.9); }
+  100% { text-shadow: 0 0 5px rgba(10,94,84,0.6); }
+}
+
+
+.highlight-service {
+  position: relative;
+}
+
+.highlight-service::before {
+  content: "Featured";
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  transform: rotate(45deg);
+  background: #0a5e54;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 40px;
+}
+
+
+.highlight-service .service-icon i {
+  color: #0a5e54;
+  text-shadow: 0px 0px 8px rgba(10,94,84,0.6);
+  animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+  0% { text-shadow: 0 0 5px rgba(10,94,84,0.6); }
+  50% { text-shadow: 0 0 20px rgba(10,94,84,0.9); }
+  100% { text-shadow: 0 0 5px rgba(10,94,84,0.6); }
+}
+
+.highlight-service {
+  position: relative;
+}
+
+.highlight-service {
+  position: relative;
+  animation: pulseZoom 2.5s infinite ease-in-out;
+  background-color: #fff9d9 !important; /* light yellow (forced) */
+  padding: 20px;
+  border-radius: 12px;
+}
+.highlight-service {
+  position: relative;
+  animation: pulseZoom 2.5s infinite ease-in-out;
+  background-color: transparent !important; /* transparent background */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Featured ribbon */
+.highlight-service::before {
+  content: "Featured";
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  transform: rotate(45deg);
+  background: #0a5e54;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 40px;
+}
+
+/* Icon pulse */
+.highlight-service .service-icon i {
+  color: #0a5e54;
+  text-shadow: 0px 0px 8px rgba(10,94,84,0.6);
+  animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+  0% { text-shadow: 0 0 5px rgba(10,94,84,0.6); }
+  50% { text-shadow: 0 0 20px rgba(10,94,84,0.9); }
+  100% { text-shadow: 0 0 5px rgba(10,94,84,0.6); }
+}
+
+/* Zoom animation */
+@keyframes pulseZoom {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+
+.font-brown {
+  color: #9c4038 !important;
+}
+
+.font-blue {
+  color: #2f2e56 !important;
+}
+
