@@ -202,7 +202,6 @@ video {
   display: flex;
   flex: 1 0 auto;
 }
-
 .preloader {
   background: linear-gradient(to bottom, #f6dd01 0%, #fff 100%); /* dark yellow to deep reddish-brown */
   height: 100%;
@@ -216,8 +215,6 @@ video {
   justify-content: center;
   align-items: center;
 }
-
-
 .preloader-bounce {
   left: 0;
   right: 0;
@@ -311,23 +308,26 @@ a#logo {
 }
 .navbar-nav li a {
   color:#2f2e54;
-  font-size: 22px;
+  font-size: 12px;
   text-decoration:none;
   display:block;
   font-weight: 500;
   opacity: 0.9;
 }
+
 .navbar-nav li a:after {
-  content:'';
-  display:block;
+  content: '';
+  display: block;
   height: 2px;
-  background:#000;
-  -webkit-transition: all 0.4s ease;
+  width: 100%;            /* takes full width of the link */
+  background: #9c4038;
   transition: all 0.4s ease;
-  -webkit-transform:scale(0);
-  transform:scale(0);
+  transform: scaleX(0);   /* horizontal scaling */
+  transform-origin: left; /* animation starts from left */
   margin-top: 4px;
 }
+
+
 .navbar-nav li a:hover:after, .navbar-nav li.active a:after{
   -webkit-transform:scale(1);
   transform:scale(1);
@@ -930,18 +930,28 @@ ul.myUL {
 
 .top-bar {
   position: absolute;
-  top: 0;
+  top: -5px;              /* moves it above the top */
   right: 0;
-  width: 1110px;       /* increased width */
-  height: 40px;       /* height of the blue shape */
-  background: #2c2c5a; /* dark blue color */
-  
-  border-bottom-left-radius: 25px; /* keep the curvy cut */
+  width: 1010px;
+  height: 10px;
+  background: #2c2c5a;
+  border-bottom-left-radius: 25px;
 }
+
 
 
 .accountability-heading {
     color: #9c4038 ;
+}
+
+.bottom-line {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;        /* full width across screen */
+  height: 6px;        /* thickness of line */
+  background: linear-gradient(to right, #fbca00 50%, #a62c24 50%);
+  z-index: 9999;      /* stays above content */
 }
 
 
@@ -1051,3 +1061,143 @@ ul.myUL {
   color: #2f2e56 !important;
 }
 
+
+
+/* CSS */
+.top-strip{
+  /* the big black area under the strip (for context) */
+  background:#000;
+  height:80px;                 /* adjust as you like */
+  display:flex;
+  align-items:flex-start;      /* keep the strip at the very top */
+}
+
+/* the thin white lane the colored bars sit on */
+.track{
+  position:relative;
+  height:12px;                 /* thickness of the colored strip */
+  background:#fff;             /* gives the white gap between bars */
+  width:100%;
+}
+
+/* shared bar styles */
+.bar{
+  position:absolute;
+  top:0;
+  height:100%;
+}
+
+/* left (yellow) bar with a slanted end */
+.bar.left{
+  left:0;
+  width:58%;                   /* how far the yellow runs; tweak as needed */
+  background:#f0b400;          /* yellow */
+  /* slant the right end */
+  clip-path:polygon(0 0, calc(100% - 18px) 0, 100% 100%, 0 100%);
+}
+
+/* right (maroon) bar with a matching slanted start */
+.bar.right{
+  right:0;
+  width:42%;                   /* remaining length; tweak together with .left */
+  background:#8f2222;          /* maroon */
+  /* slant the left end to mirror the gap */
+  clip-path:polygon(18px 0, 100% 0, 100% 100%, 0 100%);
+  border-top-right-radius:6px;     /* optional rounded end */
+  border-bottom-right-radius:6px;  /* optional rounded end */
+}
+
+/* OPTIONAL: make it scale nicely on very small screens */
+@media (max-width:600px){
+  .track{ height:10px; }
+  .bar.left{ clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 100%, 0 100%); }
+  .bar.right{ clip-path:polygon(14px 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+
+.logo-text {
+  font-family: Arial, sans-serif;
+  font-weight: 90;
+  font-size: 12px;
+  color:#9c4038 !important;
+  color: #000;
+}
+
+.hex-o {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0 50%);
+  color: #fff;              /* makes the “O” white */
+  text-align: center;
+  line-height: 12px;        /* vertically centers text */
+  font-size: 12px;          /* fits the “O” inside */
+  font-weight: 90;
+}
+
+.logo-animate {
+  font-family: Arial, sans-serif;
+  font-weight: 90;
+  font-size: 12px;
+  background: linear-gradient(90deg, #fbca00, #a62c24, #fbca00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  background-size: 200% auto;
+  animation: slowColorShift 6s linear infinite;
+}
+
+@keyframes slowColorShift {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.logo-glow {
+  font-family: Arial, sans-serif;
+  font-weight: 900;      /* heavy bold */
+  font-size: 12px;       /* as you requested */
+  color: #a62c24;        /* base color */
+  display: inline-block; 
+  animation: glowPulse 3s ease-in-out infinite,
+             floatText 5s ease-in-out infinite;
+}
+
+/* glowing effect */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #fbca00, 0 0 10px #fbca00, 0 0 15px #a62c24;
+  }
+  50% {
+    text-shadow: 0 0 20px #fbca00, 0 0 35px #a62c24, 0 0 50px #fbca00;
+  }
+  100% {
+    text-shadow: 0 0 5px #fbca00, 0 0 10px #fbca00, 0 0 15px #a62c24;
+  }
+}
+
+/* smooth floating movement */
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* small up movement */
+  }
+}
+
+
+.custom-image-style {
+  width: 200px;
+  border-radius: 10px;
+  animation: zoomBounce 10s cubic-bezier(.68,-0.55,.27,1.55) infinite;
+}
+@keyframes zoomBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}

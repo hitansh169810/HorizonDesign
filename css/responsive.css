@@ -27,7 +27,7 @@
 		margin-bottom: 20px;
 	}
 	.navbar-nav li a {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.subscribe-row h5 {
 		font-size:18px;
@@ -486,7 +486,10 @@
 		    color: #2f2e56 !important;
 	}
 	
-	
+		.customH2Css{
+		font-size : 28px !important;
+		font-weight:800 !important;
+	}
 
 
 #whoAreWe {
@@ -497,8 +500,6 @@
 	display:block;
 	
 }
-}
-
 @media only screen and (max-width: 460px) {
 	h4 {
 		font-size: 14px;
