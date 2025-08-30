@@ -10,10 +10,10 @@ body {
 }
 body {
   font: 20px/1.6 'Raleway', Arial, Helvetica, sans-serif;
-  color: #0887E3;
+  color: #9c4038;
   text-align:center;
   background: #222;
-  font-family: Marathon !important;
+  font-family:  Calibri, "Trebuchet MS", sans-serif !important;
   
 }
 
@@ -307,8 +307,8 @@ a#logo {
   margin-left: 30px;
 }
 .navbar-nav li a {
-  color:#0887E3;
-  font-size: 15px;
+  color:#2f2e54;
+  font-size: 22px;
   text-decoration:none;
   display:block;
   font-weight: 500;
@@ -802,7 +802,7 @@ textarea.form-control {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  background-color: #0887E3;
+  background-color: #9c4038;
   color: #1e1e1e;
   border-radius: 50%;
   font-size: 16px;
@@ -839,7 +839,7 @@ textarea.form-control {
   z-index: 99;
   width: 82%;
   height: 6px;
-  background-color: #0887E3;;
+  background-color: #9c4038;;
   border-radius: 3px;
 }
 
@@ -859,15 +859,15 @@ ul.myUL {
 
 .customHeading{
 	
-	color:#85c226 !important;
-	 font-family: Marathon;
+	color:#2f2e54 !important;
+	 font-family:  Calibri, "Trebuchet MS", sans-serif;
 	 text-shadow: 4px 4px #000;
 }
 
 .customHeading2{
 	
-	color:#0887E3 !important;
-	font-family: Marathon;
+	color:#9c4038 !important;
+	font-family:  Calibri, "Trebuchet MS", sans-serif;
 	text-shadow: 4px 4px #000;
 	
 	
@@ -875,42 +875,67 @@ ul.myUL {
 .customHeading3{
 	color:#000 !important;
 	text-transform: capitalize;
-	font-family: Marathon;
+	font-family:  Calibri, "Trebuchet MS", sans-serif;
 	  font-size: 40px;
 ;
 }
 .customHeading4{
 	color:#000 !important;
 	text-transform: capitalize;
-	font-family: Marathon;
+	font-family:  Calibri, "Trebuchet MS", sans-serif;
 	  font-size: 24px;
 }
 
 .customShadowBox{
-	text-shadow: 0.25px 0.25px 0.25px #0887E3;
+	text-shadow: 0.25px 0.25px 0.25px #9c4038;
 }
 
 .customHorizonRed{
-	color:#85c226 !important;
+	color:#2f2e54 !important;
 }
 
 .customHorizonBlue{
-	color:#0887E3 !important;
+	color:#9c4038 !important;
 }
 
 
 .aboutUSClass{
-	color:#85c226 !important;
+	color:#2f2e54 !important;
 	font-size: 40px !important;
 	font-weight: 800 !important;
 	 padding-bottom: 50px !important;
-	 text-shadow: 0.25px 0.25px 0.25px #0887E3;
+	 text-shadow: 0.25px 0.25px 0.25px #9c4038;
 }
 .aboutUSClass2{
-	 text-shadow: 0.25px 0.25px 0.25px #0887E3;
+	 text-shadow: 0.25px 0.25px 0.25px #9c4038;
 }
 
 .customUpperCase{
 	text-transform: capitalize;
 	
+}
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px; /* adjust as needed for header height */
+  background: #fff; /* white background of the card */
+  border: 1px solid #000; /* optional outer border */
+}
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 910px;       /* increased width */
+  height: 40px;       /* height of the blue shape */
+  background: #2c2c5a; /* dark blue color */
+  
+  border-bottom-left-radius: 25px; /* keep the curvy cut */
+}
+
+
+.accountability-heading {
+    color: #2f2e56;
 }
