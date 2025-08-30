@@ -929,14 +929,16 @@ ul.myUL {
 }
 
 .top-bar {
-  position: absolute;
-  top: -5px;              /* moves it above the top */
+  position: fixed;       /* instead of absolute */
+  top: 0;                /* align exactly at top */
   right: 0;
-  width: 1010px;
-  height: 10px;
+  width: 910px;
+  height: 30px;
   background: #2c2c5a;
   border-bottom-left-radius: 25px;
+  z-index: 9999;         /* ensure it stays above */
 }
+
 
 
 
